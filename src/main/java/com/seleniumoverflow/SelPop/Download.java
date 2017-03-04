@@ -1,5 +1,6 @@
 package com.seleniumoverflow.SelPop;
 
+import org.apache.commons.codec.binary.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,6 +9,13 @@ public class Download {
 	
 	public Download(WebDriver driver) {
 		this.driver=driver;
+		if (!StringUtils.equals("Downloads",getAcutalPageTitle())) {
+			throw new WrongPageException("Incorrect page for Download");
+		}
+	}
+
+	private String getAcutalPageTitle() {
+		return driver.findElement(By.xpath("//div[@id='mainContent']/h2")).getText().trim();
 	}
 
 	public long getLatestSeleniumDriverVersion() throws NumberFormatException{

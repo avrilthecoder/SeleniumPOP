@@ -1,6 +1,5 @@
 package com.seleniumoverflow.SelPop;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class AboutLeftNavTest extends BaseClass {
 				"Ecosystem",
 				"License",
 				"History",
-				"Getting Involved1");
+				"Getting Involved");
 		
 		SeleniumHQ seleniumHq = new SeleniumHQ(driver);
 		About aboutPage =seleniumHq.clickAboutLink();

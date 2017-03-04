@@ -10,7 +10,6 @@ public class TittleCheckTest extends BaseClass {
 		SeleniumHQ seleniumHq = new SeleniumHQ(driver);
 		Documentation documentationPage = seleniumHq.clickDocumentationLink();
 		String acutalPageTittle = documentationPage.getActualPageTittle();
-		System.out.println(acutalPageTittle);
 		Assert.assertEquals("Selenium Documentation",acutalPageTittle);
 	}
 	

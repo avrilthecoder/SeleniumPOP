@@ -26,11 +26,5 @@ public class AboutLeftNavTest extends BaseClass {
 		List<String> actualListOfLeftNavItemsFromAbout = aboutPage.getListOfLeftNavItems();
 		
 		Assert.assertEquals("Missmatched found :\n",expectedList, actualListOfLeftNavItemsFromAbout);
-		
-				
-				
-				
-				
-				
 	}
 }

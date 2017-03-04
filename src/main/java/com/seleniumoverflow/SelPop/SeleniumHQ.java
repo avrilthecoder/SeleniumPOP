@@ -35,6 +35,4 @@ public class SeleniumHQ {
 	public String getActualPageTitle(){
 		return driver.findElement(By.xpath("//div[@id='header']/h1/a")).getText().trim();
 	}
-	
-	
 }

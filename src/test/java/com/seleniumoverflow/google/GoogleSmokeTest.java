@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import com.seleniumoverflow.SelPop.BaseClass;
 import com.seleniumoverflow.google.GoogleHome;
-import com.seleniumoverflow.google.SearchBox;
 
 public class GoogleSmokeTest extends BaseClass {
 
